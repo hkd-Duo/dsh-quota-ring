@@ -51,7 +51,17 @@
 
 ## 📦 安装 / 更新
 
-### 方式一：GitHub 依赖（推荐）
+### 方式一：在 DeepSeek Harness 桌面端安装（推荐，一步到位）
+
+打开 **插件管理 → 添加插件**，在安装/来源框中粘贴：
+
+```text
+github:hkd-Duo/dsh-quota-ring
+```
+
+点击 **安装**，按提示重启 Harness 即可。更新时同样粘贴这一行重新安装（或安装 `github:hkd-Duo/dsh-quota-ring#v1.0.1` 指定版本）。
+
+### 方式二：`package.json` 依赖
 
 在本机 profile 的 `package.json`（如 `%DSH_HOME%\profiles\desktop\package.json`）中加入依赖与 bundle：
 
@@ -77,15 +87,15 @@ cd %DSH_HOME%\profiles\desktop
 pnpm install
 ```
 
-重启 DeepSeek Harness 即生效。更新 = 把版本指向最新 tag（如 `github:hkd-Duo/dsh-quota-ring#v1.0.1`）后再次 `pnpm install`。
+重启 DeepSeek Harness 即生效。
 
-### 方式二：本地目录安装
+### 方式三：本地目录安装（开发调试）
 
 ```sh
 git clone https://github.com/hkd-Duo/dsh-quota-ring.git
 ```
 
-克隆到任意目录后在 Harness 插件管理中按目录安装该 bundle（或将其链接为 profile 依赖），适合开发调试——改代码即生效。
+克隆到任意目录后在 Harness 插件管理中按目录安装该 bundle（或将其链接为 profile 依赖），改代码即生效。
 
 ## 🎨 使用
 
