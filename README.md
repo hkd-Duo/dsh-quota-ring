@@ -18,6 +18,10 @@
 
 ---
 
+<div align="center">
+  <img src="./docs/preview.png" alt="dsh-quota-ring 运行预览：DeepSeek 与 GLM 的额度圆环并排显示在输入框下方" width="720"/>
+</div>
+
 在输入框编辑区下方并排展示每一个已配置 AI 供应商的剩余额度 / 余额——像 iPhone Duo 的缺口电量环：**弧长即剩余比例，环中心是供应商 logo**，多个供应商的环同时显示，当前会话模型对应的环带高亮点。
 
 ## ✨ 特性
