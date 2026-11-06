@@ -1,0 +1,3 @@
+- insert:
+    - id: quota-ring
+      name: 'dsh-quota-ring'
